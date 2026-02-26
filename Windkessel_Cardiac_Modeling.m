@@ -28,7 +28,7 @@ legend('dPdt - Raw', 'dPdt - Smoothed')
 xlabel('Time (s)')
 ylabel('Change in Pressure (mmHg/s)')
 title('Data: Change in Pressure vs Time')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 % Plot Flow
 
@@ -50,7 +50,7 @@ legend('dQdt - Raw', 'dQdt - Smoothed')
 xlabel('Time (s)')
 ylabel('Change in Flow (mL/s^2)')
 title('Data: Change in Flow vs Time')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 print -djpeg RawDataPlots
 
@@ -166,17 +166,17 @@ plot(time, p3, '.r', time, p2, '.g', time, pressure, '.b')
 legend('Pressure - Three El Model','Pressure - Two El Model','Pressure - Data')
 xlabel('Time (s)'), ylabel('Pressure (mmHg)')
 title('Windkessel Models versus Data')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 % Pressure Error Plots 
 
 subplot(2, 2, 2);
 semilogy(time, errorWind2Pressure, time, errorWind3Pressure)
-legend('Two Element', 'Three Element')
+legend('Two Element', 'Three Element', 'Location', 'SouthEast')
 xlabel('Time (s)')
 ylabel('Error in Pressure (mmHg)')
 title('Windkessel Error Plot')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 % Predicting Flow 
 
@@ -220,16 +220,16 @@ plot(time, q3, '.r', time, q2, '.g', time, flow, '.b')
 legend('Flow - Three El Model','Flow - Two El Model', 'Flow - Data')
 xlabel('Time (s)'), ylabel('Flow (mL/min)')
 title('Windkessel Models versus Data')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 % Flow Error Plots 
 
 subplot(2, 2, 4);
 semilogy(time, errorWind2Flow, time, errorWind3Flow)
-legend('Two Element', 'Three Element')
+legend('Two Element', 'Three Element', 'Location', 'SouthEast')
 xlabel('Time (s)')
 ylabel('Error in Flow (mL/min)')
 title('Windkessel Error Plot')
-set(gca, 'FontSize', 14)
+set(gca, 'FontSize', 10)
 
 print -djpeg ModelPlots
