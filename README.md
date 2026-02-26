@@ -12,9 +12,7 @@ This project used MATLAB and Signal Processing Toolbox Version 25.2 (R2025b)
 Using a circuit analogy and Kirchoff’s Law ($\sum I_{in} = \sum I_{out}$), the following equation states that cardiac output ($Q(t)$) is equal to flow through the resistive ($Q_R$ small arteries) and compliant ($Q_c$ large arteries) compartments:
 
 $$
-
 Q(t) = Q_R(t) + Q_C(t)
-
 $$
 
 Substituting Ohm’s Law for fluid flow ($Q(t) = \frac{P(t)}{R}$ where $R$ is fluid resistance) and the definition of vascular compliance ($Q(t) = C\frac{dP}{dt}$ where $C$ is capacitance):
